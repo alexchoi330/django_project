@@ -3,12 +3,12 @@
 **To set up the project: Windows and macOS**
 
 - create your virtual environment
+    windows
     ```bash
-    # windows 
     python -m venv venv
     ``` 
+    mac os
     ```bash
-    # mac os 
     python3 -m venv venv
     ``` 
 
