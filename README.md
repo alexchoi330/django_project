@@ -36,11 +36,10 @@ python3 manage.py makemigrations
 python3 manage.py migrate
 # run the server
 python3 manage.py runserver
-# create a super admin account to populate the database 
-python3 manage.py createsuperuser
 ``` 
 
 - access website, open the given local browser url (default is http://127.0.0.1:8000/) 
+
 - to access the admin portal: add admin at the end of the url
 
 - ctrl + c to exit the local server at any moment
@@ -50,4 +49,4 @@ python3 manage.py createsuperuser
 - Refer to initial_data.json inside the data folder for sample data
 
 **Assumptions**
-- No need to save the data but rather manually populate the database
+- No need to save the data but rather manually populate the database using the admin portal
