@@ -8,12 +8,13 @@ windows
 ```bash
 python -m venv venv
 ``` 
+
 mac os
 ```bash
 python3 -m venv venv
 ``` 
 
-- activate your virtual environment, 
+- activate your virtual environment
 
 windows:
 ```bash
@@ -24,15 +25,54 @@ mac OS
 source venv/bin/activate
 ```
 
-- install the required packages, run 'pip install -r requirements.txt' for windows and macos
+- install the required packages
 
-- move directory to the app folder, run 'cd .\inventory_app\' for windows and macos
+windows and macOS
+```bash
+pip install -r requirements.txt
+```
 
-- create database, run 'python manage.py makemigrations' and run 'python manage.py migrate' for windows, replace 'python' with 'python3' for mac os
+- move directory to the app folder
 
-- load in a sample data, run 'python manage.py loaddata core/data/initial_data.json', replace 'python' with 'python3' for mac os
+windows and macOS
+```bash
+cd .\inventory_app\
+```
 
-- run the server, run 'python manage.py runserver', replace 'python' with 'python3' for mac os
+- create database 
+
+windows 
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+mac OS
+```bash
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+- load in a sample data 
+
+windows
+```bash
+python manage.py loaddata core/data/initial_data.json
+```
+macOS
+```bash
+python3 manage.py loaddata core/data/initial_data.json
+```
+
+- run the server
+
+windows
+```bash
+python manage.py runserver
+```
+macOS
+```bash
+python3 manage.py runserver
+```
 
 - access website, open the given local browser url (default is http://127.0.0.1:8000/) 
 
