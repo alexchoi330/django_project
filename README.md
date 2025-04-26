@@ -38,11 +38,11 @@ python3 manage.py migrate
 python3 manage.py runserver
 ``` 
 
-- access website, open the given local browser url (default is http://127.0.0.1:8000/) 
+- To access the website, open the local browser url given in the terminal (default is http://127.0.0.1:8000/) 
 
-- to access the admin portal: add admin at the end of the url
+- To access the admin portal: add admin at the end of the url 
 
-- ctrl + c to exit the local server at any moment
+- ctrl + c to close the local development server at any moment
 
 **Notes:**
 - Used chatgpt to create random data, 5 categories, 10 tags and 20 products
