@@ -1,8 +1,16 @@
-Python Django Coding Assignment - Alex Choi
+# Python Django Coding Assignment - Alex Choi
 
 **To set up the project: Windows and macOS**
 
-- create your virtual environment, run 'python -m venv venv' for windows, run 'python3 -m venv venv' for macOS
+- create your virtual environment
+    ```bash
+    # windows 
+    python -m venv venv
+    ``` 
+    ```bash
+    # mac os 
+    python3 -m venv venv
+    ``` 
 
 - activate your virtual environment, run '.\venv\Scripts\Activate.ps1' for windows, run 'source venv/bin/activate' for macOS
 
