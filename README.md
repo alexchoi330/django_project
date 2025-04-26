@@ -3,16 +3,26 @@
 **To set up the project: Windows and macOS**
 
 - create your virtual environment
-    windows
-    ```bash
-    python -m venv venv
-    ``` 
-    mac os
-    ```bash
-    python3 -m venv venv
-    ``` 
+    
+windows
+```bash
+python -m venv venv
+``` 
+mac os
+```bash
+python3 -m venv venv
+``` 
 
-- activate your virtual environment, run '.\venv\Scripts\Activate.ps1' for windows, run 'source venv/bin/activate' for macOS
+- activate your virtual environment, 
+
+windows:
+```bash
+.\venv\Scripts\Activate.ps1
+```
+mac OS
+```bash
+source venv/bin/activate
+```
 
 - install the required packages, run 'pip install -r requirements.txt' for windows and macos
 
