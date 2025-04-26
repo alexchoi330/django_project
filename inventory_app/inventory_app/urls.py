@@ -23,6 +23,5 @@ from core.views import inventory, inventory_view
 urlpatterns = [
     #path('', inventory, name='inventory'),
     path('', inventory_view, name='inventory_view'),
-
     path('admin/', admin.site.urls),
 ]

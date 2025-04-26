@@ -48,5 +48,6 @@ python3 manage.py runserver
 - Used chatgpt to create random data, 5 categories, 10 tags and 20 products
 - Refer to initial_data.json inside the data folder for sample data
 
+
 **Assumptions**
 - No need to save the data but rather manually populate the database using the admin portal

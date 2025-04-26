@@ -27,7 +27,9 @@ class Tag(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
+    #category is a one to many relationship with product, if category is deleted then all products connected to it are also deleted
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    # tag is a many to many relationship with product
     tags = models.ManyToManyField(Tag)
     
     class Meta:
