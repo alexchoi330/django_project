@@ -1,0 +1,67 @@
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% comment %} <script src="https://cdn.tailwindcss.com"></script>  only if i want to use tailwind css for styling{% endcomment %} 
+
+        <title>inventory app</title>
+
+    </head>
+
+    <body> 
+        <div>
+            <h1>Inventory</h1>
+              <!-- Filters -->
+              <form method="get">
+                <!-- Search -->
+                <input type="text" name="search" placeholder="Search description..." value="{{ request.GET.search }}" />
+
+                <!-- Dropdown bar for Category -->
+                <select name="category" >
+                  <option value="">All Categories</option>
+                  {% for category in categories %}
+                    <option value="{{ category.name }}" {% if request.GET.category == category.name %}selected{% endif %}>
+                      {{ category.name }}
+                    </option>
+                  {% endfor %}
+                </select>
+
+                <!-- Dropdown bar for Tag -->
+                <select name="tag">
+                  <option value="">All Tags</option>
+                  {% for tag in tags %}
+                    <option value="{{ tag.name }}" {% if request.GET.tag == tag.name %}selected{% endif %}>
+                      {{ tag.name }}
+                    </option>
+                  {% endfor %}
+                </select>
+
+                <button type="submit">Apply Filters</button>
+              </form>
+
+              <!-- List of the Products -->
+              <div>
+                {% for product in products %}
+                  <div>
+                    <h2>{{ product.name }}</h2>
+                    <p>Description: {{ product.description }}</p>
+                    <p>Category: {{ product.category.name }}</p>
+                    <p>Tags:
+                      {% for tag in product.tags.all %}
+                        <span>{{ tag.name }}</span>
+                      {% empty %}
+                        No tags
+                      {% endfor %}
+                    </p>
+                  </div>
+                {% empty %}
+                  <!-- if there are no products that meet the search or filter requirements -->
+                  <p>There are no product that match your search.</p>
+                {% endfor %}
+              </div>
+        </div>
+    </body>
+</html>
